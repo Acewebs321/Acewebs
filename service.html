@@ -42,6 +42,34 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             background-color: #1a1a1a;
         }
+        /* WhatsApp Float */
+            .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #a2ff0ef3;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
+            }
+
+            .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            }
+
+
+
     </style>
 </head>
 <body class="bg-black text-white font-sans leading-relaxed">
@@ -238,7 +266,11 @@
             &copy; <span id="current-year"></span> ACEWEBS. All rights reserved.
         </p>
     </div>
-    
+
+     <a href="https://wa.me/919497268130?text=Hi! I'm interested in your Services" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
   </footer>
     </main>
 
